@@ -76,7 +76,7 @@ jobs:
 
   security:
     permissions:
-      security-events: write  # for CodeQL analysis
+      security-events: write
     name: Security
     runs-on: ubuntu-latest
     steps:
