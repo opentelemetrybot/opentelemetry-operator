@@ -3,6 +3,9 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: read
+
 jobs:
   operator-hub-prod-release:
     uses: ./.github/workflows/reusable-operator-hub-release.yaml
