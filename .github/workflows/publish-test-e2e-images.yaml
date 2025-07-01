@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   bridge-server:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -31,7 +31,7 @@ jobs:
       path: bridge-server
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   golang:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -40,7 +40,7 @@ jobs:
       path: golang
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   python:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -49,7 +49,7 @@ jobs:
       path: python
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   java:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -58,7 +58,7 @@ jobs:
       path: java
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   apache-httpd:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -67,7 +67,7 @@ jobs:
       path: apache-httpd
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   dotnet:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -76,7 +76,7 @@ jobs:
       path: dotnet
       platforms: linux/arm64,linux/amd64
   nodejs:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
@@ -85,7 +85,7 @@ jobs:
       path: nodejs
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   metrics-basic-auth:
-    permissions: # required by the reusable workflow
+    permissions:
       packages: write
       attestations: write
       id-token: write
