@@ -23,7 +23,6 @@ permissions:
 jobs:
   publish:
     permissions:
-      contents: read
       packages: write # required for pushing Docker images to GHCR
       attestations: write # required for generating build attestations
       id-token: write # required for OIDC token access

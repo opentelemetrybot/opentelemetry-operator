@@ -23,7 +23,6 @@ concurrency:
 jobs:
   bridge-server:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -33,7 +32,6 @@ jobs:
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   golang:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -43,7 +41,6 @@ jobs:
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   python:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -53,7 +50,6 @@ jobs:
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   java:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -63,7 +59,6 @@ jobs:
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   apache-httpd:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -73,7 +68,6 @@ jobs:
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   dotnet:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -83,7 +77,6 @@ jobs:
       platforms: linux/arm64,linux/amd64
   nodejs:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
@@ -93,7 +86,6 @@ jobs:
       platforms: linux/arm64,linux/amd64,linux/s390x,linux/ppc64le
   metrics-basic-auth:
     permissions: # required by the reusable workflow
-      contents: read
       packages: write
       attestations: write
       id-token: write
