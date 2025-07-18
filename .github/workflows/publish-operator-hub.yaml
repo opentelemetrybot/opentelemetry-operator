@@ -9,7 +9,7 @@ permissions:
 jobs:
   operator-hub-prod-release:
     permissions: # required by the reusable workflow
-      contents: write
+      contents: write  # required for pushing changes
     uses: ./.github/workflows/reusable-operator-hub-release.yaml
     with:
       org: redhat-openshift-ecosystem
@@ -20,7 +20,7 @@ jobs:
 
   operator-hub-community-release:
     permissions: # required by the reusable workflow
-      contents: write
+      contents: write  # required for pushing changes
     uses: ./.github/workflows/reusable-operator-hub-release.yaml
     with:
       org: k8s-operatorhub

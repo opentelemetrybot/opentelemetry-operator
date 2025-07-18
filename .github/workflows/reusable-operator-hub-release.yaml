@@ -22,7 +22,7 @@ permissions:
 jobs:
   create-operator-pull-request:
     permissions:
-      contents: write  # for Git to git push
+      contents: write  # required for pushing changes
     runs-on: ubuntu-latest
     steps:
       - name: Set version as env variable
