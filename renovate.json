@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["helpers:pinGitHubActionDigestsToSemver"],
   "labels": ["dependencies"],
   "enabledManagers": ["regex", "npm", "pip_requirements"],
   "customManagers": [
